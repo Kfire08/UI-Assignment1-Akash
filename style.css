@@ -15,7 +15,18 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-
+/* Media query for tablet size */
+@media only screen and (max-width: 1200px) {
+  #stripetext {
+    width: 20% !important;
+  }
+  #navbar {
+    width: 62% !important;
+  }
+  .popover {
+    left: 10% !important;
+  }
+}
 body {
   min-height: 97vh;
   font-family: "Open Sans", sans-serif;
