@@ -4,9 +4,9 @@
   --padding: 8px 16px;
   --transition-duration: 0.3s;
   --products-width: 500px;
-  --products-height: 300px;
-  --developers-width: 400px;
-  --developers-height: 280px;
+  --products-height: 400px;
+  --developers-width: 390px;
+  --developers-height: 320px;
   --company-width: 280px;
   --company-height: 310px;
 }
@@ -19,9 +19,7 @@
 body {
   min-height: 97vh;
   font-family: "Open Sans", sans-serif;
-  background-image: url("https://img.webdesign-inspiration.com/v7/webdesign-inspiration.com/uploads/design/2014-03/stripe-com-14408.png");
-  background-size: cover;
-  background-position-y: 25%;
+  background-image: url(stripeimg.png);
   padding: 20px;
 }
 
@@ -34,7 +32,6 @@ body {
 
 .nav {
   display: flex;
-  justify-content: center;
 }
 .nav-link {
   height: 50px;
@@ -57,14 +54,13 @@ body {
 
 .popover {
   position: absolute;
-  left: 33.5vw;
+  left: 25%;
   right: 0;
   opacity: 0;
   transform-origin: center -20px;
   transform: rotateX(-15deg);
   transition: transform var(--transition-duration),
     opacity var(--transition-duration);
-  background: red;
   display: inline-block;
 }
 
