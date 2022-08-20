@@ -291,8 +291,8 @@ h4 {
   padding: 1rem;
   background: #fff;
   border-radius: 5px;
-  width: 96%;
-  height: 96%;
+  width: 95vw;
+  height: 95%;
   position: relative;
   transition: all 5s ease-in-out;
 }
@@ -316,8 +316,8 @@ h4 {
   color: #06d85f;
 }
 .popup .content {
-  max-height: 96%;
-  overflow: auto;
+  max-height: 95%;
+  /* overflow: auto; */
 }
 
 /* Media query for tablet size */
@@ -350,5 +350,7 @@ h4 {
     background-image: url(stripemobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
   }
 }
