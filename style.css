@@ -317,7 +317,7 @@ h4 {
 }
 .popup .content {
   max-height: 95%;
-  /* overflow: auto; */
+  overflow: auto;
 }
 
 /* Media query for tablet size */
@@ -342,6 +342,15 @@ h4 {
     right: 0;
     position: absolute;
   }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+  }
 }
 
 /* Media query for mobile size */
@@ -350,7 +359,10 @@ h4 {
     background-image: url(stripemobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+    position: relative;
+  }
+  html,
+  body {
+    overflow-x: hidden;
   }
 }
