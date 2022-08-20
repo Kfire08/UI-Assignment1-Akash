@@ -15,25 +15,13 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-/* Media query for tablet size */
-@media only screen and (max-width: 1200px) {
-  #stripetext {
-    width: 20% !important;
-  }
-  #navbar {
-    width: 62% !important;
-  }
-  .popover {
-    left: 10% !important;
-  }
-}
+
 body {
   min-height: 97vh;
   font-family: "Open Sans", sans-serif;
   background-image: url(stripeimg.png);
   padding: 20px;
 }
-
 /* Root element */
 .header {
   perspective: 2000px;
@@ -60,7 +48,25 @@ body {
 .nav-link:hover {
   opacity: 0.5;
 }
-
+#signincontainer {
+  display: flex;
+  align-items: center;
+}
+#menubtncontainer {
+  display: none;
+}
+#menubtn {
+  border: none;
+  width: 3rem;
+  height: 2rem;
+  border-radius: 1rem;
+  color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+}
+#menubtn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.8);
+}
 /* Popover ----------------------------- */
 
 .popover {
@@ -260,4 +266,45 @@ h4 {
   top: 6px;
   width: 18px;
   margin-right: 12px;
+}
+
+/* Mobile device popup menu */
+/* .mobilepopupmenu {
+  width: 100vw;
+  height: fit-content;
+  margin: 1rem;
+  background-color: white;
+} */
+
+/* Media query for tablet size */
+@media only screen and (max-width: 1100px) {
+  #stripetext {
+    width: 20% !important;
+  }
+  #navbar {
+    width: 62% !important;
+  }
+  .popover {
+    left: 10% !important;
+  }
+  #navbar {
+    display: none;
+  }
+  #signincontainer {
+    display: none;
+  }
+  #menubtncontainer {
+    display: block;
+    right: 0;
+    position: absolute;
+  }
+}
+
+/* Media query for mobile size */
+@media only screen and (max-width: 450px) {
+  body {
+    background-image: url(stripemobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
