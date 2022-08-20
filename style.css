@@ -292,7 +292,7 @@ h4 {
   background: #fff;
   border-radius: 5px;
   width: 95vw;
-  height: 95%;
+  height: 95vh;
   position: relative;
   transition: all 5s ease-in-out;
 }
@@ -316,7 +316,7 @@ h4 {
   color: #06d85f;
 }
 .popup .content {
-  max-height: 95%;
+  max-height: 95vh;
   overflow: auto;
 }
 
