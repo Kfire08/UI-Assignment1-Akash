@@ -43,7 +43,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
             </svg>
           </div>
-          <div id="menubtncontainer"><button id="menubtn">
+          <div id="menubtncontainer"><button id="menubtn" onclick="location.href='#popup1';">
   <svg width="16" height="10" viewBox="0 0 16 10" fill="white">
     <title>Open mobile navigation</title>
     <g>
@@ -128,7 +128,16 @@
         <div class="arrow"></div>  
       </div>
     </header>
-    <!-- <div class="mobilepopupmenu"></div> -->
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+      POPUP CONTENT
+		</div>
+	</div>
+</div>
+
   </body>
   <script src="script.js"></script>
 </html>
