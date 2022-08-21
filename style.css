@@ -68,6 +68,29 @@ body {
   background: rgba(255, 255, 255, 0.4);
   color: rgba(255, 255, 255, 0.8);
 }
+
+.externalLinks {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.externalLinks:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+#stripeText {
+  color: white;
+  font-size: 2rem;
+  line-height: 50px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+#stripeText:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+}
 /* Popover ----------------------------- */
 
 .popover {
@@ -294,7 +317,7 @@ h4 {
   width: 95vw;
   height: 95vh;
   position: relative;
-  transition: all 5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .popup h2 {
