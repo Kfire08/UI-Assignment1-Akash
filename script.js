@@ -14,7 +14,7 @@ const sections = ["products", "developers", "company"];
 
 // TODO: generate on the fly
 const dimensions = {
-  products: { width: 500, height: 400, x: 0 },
+  products: { width: 490, height: 350, x: 0 },
   developers: { width: 390, height: 320, x: 100 },
   company: { width: 280, height: 310, x: 200 },
 };

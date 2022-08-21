@@ -3,8 +3,8 @@
 :root {
   --padding: 8px 16px;
   --transition-duration: 0.3s;
-  --products-width: 500px;
-  --products-height: 400px;
+  --products-width: 490px;
+  --products-height: 350px;
   --developers-width: 390px;
   --developers-height: 320px;
   --company-width: 280px;
@@ -173,9 +173,14 @@ body {
 
 .navlist-primary li {
   display: flex;
-  padding: 16px 0;
+  align-items: center;
+  padding: 4px 0;
 }
-
+.navlist-secondary li {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 0 0;
+}
 .circle {
   flex: 0 0 48px;
   width: 48px;
@@ -311,22 +316,17 @@ h4 {
 
 .popup {
   margin: 1rem auto;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   background: #fff;
   border-radius: 5px;
   width: 95vw;
-  height: 95vh;
+  height: fit-content;
   position: relative;
   transition: all 1s ease-in-out;
 }
-
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
 .popup .close {
   position: absolute;
+  z-index: 10;
   top: 20px;
   right: 30px;
   transition: all 200ms;
@@ -338,9 +338,29 @@ h4 {
 .popup .close:hover {
   color: #06d85f;
 }
-.popup .content {
-  max-height: 95vh;
-  overflow: auto;
+
+.seperationLine {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(66, 71, 112, 0.09),
+    rgba(66, 71, 112, 0.09) 50%,
+    transparent 0,
+    transparent
+  );
+  background-size: 8px 1px;
+  content: "";
+}
+#signInSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f9fc;
+  width: 100%;
+  height: 4rem;
 }
 
 /* Media query for tablet size */
@@ -365,12 +385,13 @@ h4 {
     right: 0;
     position: absolute;
   }
-
   html,
   body {
     overflow-x: hidden;
   }
-
+  html {
+    overflow-y: visible;
+  }
   body {
     position: relative;
   }
@@ -387,5 +408,17 @@ h4 {
   html,
   body {
     overflow-x: hidden;
+  }
+  .mobilePayText {
+    display: none;
+  }
+  .circle {
+    flex: 0 0 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+  }
+  .navlist-secondary {
+    margin-left: -1rem;
   }
 }
