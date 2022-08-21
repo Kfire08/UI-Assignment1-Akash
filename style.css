@@ -312,6 +312,7 @@ h4 {
 .overlay:target {
   visibility: visible;
   opacity: 1;
+  overflow-y: scroll;
 }
 
 .popup {
@@ -385,16 +386,13 @@ h4 {
     right: 0;
     position: absolute;
   }
-  html,
+  /* html,
   body {
     overflow-x: hidden;
   }
-  html {
-    overflow-y: visible;
-  }
   body {
     position: relative;
-  }
+  } */
 }
 
 /* Media query for mobile size */
