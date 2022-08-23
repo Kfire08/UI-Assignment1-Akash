@@ -6,7 +6,7 @@
   --products-width: 490px;
   --products-height: 350px;
   --developers-width: 390px;
-  --developers-height: 320px;
+  --developers-height: 500px;
   --company-width: 280px;
   --company-height: 310px;
 }
@@ -247,7 +247,7 @@ body {
 .subtle {
   color: #7b8ca3;
   font-size: 14px;
-  margin: 3px 0 32px 0;
+  margin: 3px 0 32px 1rem;
 }
 
 .two-col {
@@ -262,15 +262,18 @@ h4 {
   color: #8898aa;
   text-transform: uppercase;
   margin-bottom: 4px;
+  margin-left: 1rem;
 }
 
 .navlist-subtle {
   color: #6772e5;
   font-size: 14px;
+  list-style: none;
 }
 
 .navlist-subtle li {
   padding: 6px 0;
+  margin-left: -1.5rem;
 }
 
 /* Company Popover ------------------------------------ */
@@ -284,6 +287,7 @@ h4 {
   color: #6772e5;
   text-transform: uppercase;
   font-weight: 600;
+  list-style: none;
 }
 
 .navlist li {
@@ -343,7 +347,8 @@ h4 {
 .seperationLine {
   top: 0;
   left: 0;
-  width: 100%;
+  margin-left: -1rem;
+  width: 109.8%;
   height: 1px;
   background: linear-gradient(
     90deg,
@@ -360,7 +365,8 @@ h4 {
   align-items: center;
   justify-content: center;
   background-color: #f6f9fc;
-  width: 100%;
+  margin-left: -1rem;
+  width: 109.8%;
   height: 4rem;
 }
 
