@@ -28,6 +28,17 @@ body {
 }
 
 /* Top nav ----------------------------- */
+#stripeText {
+  color: white;
+  font-size: 2rem;
+  line-height: 50px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+#stripeText:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+}
 
 .nav {
   display: flex;
@@ -52,6 +63,8 @@ body {
   display: flex;
   align-items: center;
 }
+
+/* MENU BUTTON CSS FOR MOBILE VIEW */
 #menubtncontainer {
   display: none;
 }
@@ -80,17 +93,6 @@ body {
   transition: 0.2s;
 }
 
-#stripeText {
-  color: white;
-  font-size: 2rem;
-  line-height: 50px;
-  font-weight: bolder;
-  text-decoration: none;
-}
-#stripeText:hover {
-  opacity: 0.5;
-  transition: 0.2s;
-}
 /* Popover ----------------------------- */
 
 .popover {
@@ -301,7 +303,7 @@ h4 {
   margin-right: 12px;
 }
 
-/* Mobile device popup menu */
+/* MOBILE VIEW CSS */
 .overlay {
   position: fixed;
   top: 0;
@@ -384,7 +386,8 @@ h4 {
     margin-left: 5rem;
   }
 }
-/* Media query for tablet size */
+
+/* MEDIA QUERY FOR TABLET VIEW */
 @media only screen and (max-width: 950px) {
   #navbar {
     width: 62% !important;
@@ -412,7 +415,7 @@ h4 {
   }
 }
 
-/* Media query for mobile size */
+/* MEDIA QUERY FOR MOBILE VIEW */
 @media only screen and (max-width: 450px) {
   body {
     background-image: url(stripemobile.jpg);
