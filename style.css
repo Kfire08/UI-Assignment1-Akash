@@ -370,12 +370,16 @@ h4 {
   color: #7e899c;
   font-weight: 530;
 }
-
-/* Media query for tablet size */
 @media only screen and (max-width: 1100px) {
   #stripetext {
     width: 20% !important;
   }
+  #signincontainer {
+    margin-left: 5rem;
+  }
+}
+/* Media query for tablet size */
+@media only screen and (max-width: 950px) {
   #navbar {
     width: 62% !important;
   }
