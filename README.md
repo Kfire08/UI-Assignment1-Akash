@@ -10,5 +10,9 @@ Tech Used: HTML, CSS and Javascript
 <br/><br>
 Task Description:
 <br/>
+<br/>
 Replicate stripe.com header menu interaction as shown in the screenshot.
 Create responsive top menu like stripe.com with the same mouseover interaction. Replicate the same responsive behavior in mobile. 
+<br/>
+<br/>
+###Note: Was falling short on time therefore primarily focused on cloning the design requirement.
